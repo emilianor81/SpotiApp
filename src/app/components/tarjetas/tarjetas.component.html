@@ -1,0 +1,25 @@
+
+
+<div class="card-columns card m-5 row animated fadeIn">
+
+  <div (click)='verArtista(item)' *ngFor= "let item  of items" class="cards custom col-4 puntero">
+    <img [src]="item.images | noimage" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{item.name}}</h5>
+      <p class="card-text">This is a wider card with suppor. This content is a little bit longer.</p>
+      <span *ngFor="let artista of item.artists" class="badge rounded-pill bg-primary">{{artista.name}}</span>
+    </div>
+  </div>
+
+</div> 
+
+<!-- <div class="card-columns card m-5 row">
+  <div *ngFor= "let artista of artistas" class="cards custom col ">
+    <img [src]="artista.images | noimage" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{artista.name}}</h5>
+     <p class="card-text">This is a wider card with suppor. This content is a little bit longer.</p> -->
+      <!-- <span *ngFor="let artista of artista.artists" class="badge rounded-pill bg-primary">{{artista.name}}</span> -->
+    <!-- </div>
+  </div>
+</div> --> 
